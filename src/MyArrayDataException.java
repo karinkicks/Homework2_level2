@@ -1,8 +1,12 @@
-public class MyArrayDataException extends NumberFormatException{
+public class MyArrayDataException extends Exception {
     public MyArrayDataException() {
     }
 
-    public MyArrayDataException(String s) {
-        System.out.println(s);
+    public MyArrayDataException(String message) {
+        super(message);
+    }
+
+    public MyArrayDataException(String message, Throwable cause) {
+        super(message, cause);
     }
 }

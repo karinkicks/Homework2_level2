@@ -1,10 +1,10 @@
-public class MyArraySizeException extends Throwable{
+public class MyArraySizeException extends RuntimeException {
     public MyArraySizeException() {
         super();
     }
 
     public MyArraySizeException(String message) {
-        System.out.println(message);
+        super(message);
     }
 
     public MyArraySizeException(String message, Throwable cause) {
